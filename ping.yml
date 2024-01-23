@@ -1,0 +1,5 @@
+---
+- hosts: srv
+  gather_facts: false
+  tasks:
+    - ping:

@@ -1,0 +1,14 @@
+---
+- name: autorized_key
+  hosts: srv
+  roles:
+    - keys
+#  post_tasks:
+#    - name: Config ROOT
+#      ansible.builtin.import_role:
+#        name: key
+#        tasks_from: config-root
+#    - name: Config USERS 
+#      ansible.builtin.import_role:
+#        name: key
+#        tasks_from: config_users

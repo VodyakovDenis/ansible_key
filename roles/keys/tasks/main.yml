@@ -1,0 +1,16 @@
+---
+- name: Copy clean authorized_keys file
+  ansible.builtin.template:
+    src: authorized_keys.j2
+    dest: "/home/{{ item.key }}/.ssh/authorized_keys"
+  loop: "{{ users | dict2items }}"
+  when: item.value | length > 0
+
+- name: Set correct permissions on authorized_keys
+  ansible.builtin.file:
+    path: "/home/{{ item.key }}/.ssh/authorized_keys"
+    owner: "{{ item.key }}"
+    group: "{{ item.key }}"
+    mode: "0600"
+  loop: "{{ users | dict2items }}"
+  when: item.value | length > 0

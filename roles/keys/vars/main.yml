@@ -1,0 +1,6 @@
+---
+users:
+  test2:
+    - "ssh-rsa 444AAAA111zaC1yc2EAAAADAQABAAABgQC7KoRsmTb6EC67YSxCrvoqTLhZcBgEd7lM4LebHU5p70= deni1@denis-lin"
+    - "ssh-rsa 444AAAA222zaC1yc2EAAAADAQABAAABgQC7KoRsmTb6EC67YSxCrvoqTLhZcBgEd7lM4LebHU5p70= deni2@denis-lin"
+    - "ssh-rsa 444AAAA333zaC1yc2EAAAADAQABAAABgQC7KoRsmTb6EC67YSxCrvoqTLhZcBgEd7lM4LebHU5p70= deni3@denis-lin"
